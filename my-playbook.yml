@@ -1,0 +1,6 @@
+- hosts: all
+  user: mark-cheng
+  gather_facts: False
+
+  tasks:
+    - debug: msg="reading from {{ env_name }}"
