@@ -10,4 +10,3 @@
     - name: Print ping result
       ansible.builtin.debug:
         msg: "{{ pong }}"
-
