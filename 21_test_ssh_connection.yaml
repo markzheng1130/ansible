@@ -1,0 +1,12 @@
+---
+- name: Test SSH Connection
+  hosts: lnode01
+
+  tasks:
+    - name: Ansible Ping - try to connect to host test
+      ansible.builtin.ping:
+      register: pong
+
+    - name: Print ping result
+      ansible.builtin.debug:
+        msg: "{{ pong }}"
